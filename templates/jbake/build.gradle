@@ -1,0 +1,20 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'me.champeau.gradle:jbake-gradle-plugin:0.2'
+
+        // optional, if you use asciidoctor markup
+        classpath 'org.asciidoctor:asciidoctor-java-integration:0.1.4'
+
+        // optional, if you use freemarker template engine
+        classpath 'org.freemarker:freemarker:2.3.19'
+
+        // optional, if you use markdown template engine
+        classpath 'org.pegdown:pegdown:1.4.2'
+    }
+}
+
+apply plugin: 'me.champeau.jbake'
